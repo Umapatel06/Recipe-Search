@@ -17,9 +17,12 @@ ted recipe, including ingredients and preparation instructions.
 Responsive Design: The application is designed to be responsive, ensuring optimal user experience across various devices and screen sizes.
 
 # Technologies Used
-HTML/CSS: Used for structuring and styling the web pages.
-JavaScript: Used to implement interactive features such as fetching data from the MealDB API and dynamically updating the user interface.
-MealDB API: Integrated to retrieve recipe data based on user queries.
+# HTML/CSS:
+Used for structuring and styling the web pages.
+# JavaScript: 
+Used to implement interactive features such as fetching data from the MealDB API and dynamically updating the user interface.
+# MealDB API: 
+Integrated to retrieve recipe data based on user queries.
 
 # Usage
 Could you clone the repository to your local machine?
