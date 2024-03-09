@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Recipe Search</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            height: 500px;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .search-input {
+            width: 98%;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .loading {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .recipe-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .recipe-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+
+        
+        <h1 style="color:double-button">Recipe Search</h1>    
+        <input type="text" id="search-input" class="search-input" placeholder="Search by ingredient or keyword...">
+         <div id="items"></div>
+        <button id="search-btn">Search</button>
+        <div class="loading" id="loading"></div>
+        
+    </div>
+
+    <div class="additional-box">
+        
+        <div class="box"><img src="ins2.png" alt="Image 1"></div>
+        <div class="box"><img src="ins3.png" alt="Image 2"></div>
+        <div class="box"><img src="ins4.jpg" alt="Image 3"></div>
+        <div class="box"><img src="ins5.jpg" alt="Image 4"></div>
+    </div>
+    <div class="highlighter"></div>
+    </div>
+
+    <div class="login-section">
+        <h2>16 Quick & Easy 30 Minute Recipes!</h2>
+        <p>(Plus weekly recipe updates)</p>
+        <form>
+            <input type="text" name="firstname" placeholder="Your First Name">
+            <input type="email" name="email" placeholder="Your Email Address">
+            <button type="submit">SIGN ME UP!</button>
+        </form>
+    </div>
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <footer>
+        <p>  This is the footer content.</p>
+        <div class="social-icons">
+            <a href="#" class="icon-link"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="icon-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="icon-link"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+ 
+</body>
+</html>

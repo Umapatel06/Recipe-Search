@@ -1,0 +1,308 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:white;
+    margin: 100px;
+    padding: 0;
+    background-image: cover;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.additional-box-container {
+    position: relative; /* Ensure proper positioning */
+    max-width: 800px; /* Same width as the container */
+    margin: 20px auto;
+}
+
+.additional-box {
+    max-width: 802px; /* Same width as the container */
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #7e2828; /* Added for visibility */
+    border: 2px solid hwb(255 1% 77%); /* Added border for distinction */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 150px; /* Set width of the boxes */
+    height: 150px; /* Set height of the boxes */
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    flex: grow 1 ;
+}
+.box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.image-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.box:hover {
+    transform: scale(1.1); /* Scale the image on hover */
+}
+.highlighter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 2px solid #09ff00;
+    box-sizing: border-box;
+    pointer-events: none;
+    transition: width 0.3s, height 0.3s, top 0.3s, left 0.3s; /* Smooth transition */
+    z-index: -1; /* Ensure the highlighter is below the images */
+}
+
+.login-section {
+    background-color: #1452b7;
+    padding: 20px;
+    text-align: center;
+    width: 61%; /* Set width to 80% */
+    margin: 0 auto;
+    border-radius: 10px; /* Center the login section */
+}
+
+.login-section input[type="text"],
+        .login-section input[type="email"] {
+            display: block;
+            width: 70%;
+            padding: 10px;
+            margin-bottom: 10px; /* Add margin between input fields */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            
+            box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+.login-section:hover {
+    background-color: #3063c2; /* Change background color on hover */
+}
+
+.navbar {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* 
+.container {
+    margin-top: 500px;
+    max-width: 700px;
+    padding: 20px;
+    background-color: hwb(0 10% 43%);
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+
+
+.container {
+    width: 100%;
+    background-image: url(image3.jpg);
+    background-image: cover;
+
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    /*background-color: rgb(28, 80, 99); */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+
+.container.highlighted {
+    background-color: hsl(242, 79%, 43%); /* Light blue color for highlighting */
+}
+.container:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+}
+
+
+
+h1 {
+    color: hwb(252 2% 14%);
+    text-align: center;
+}
+
+img {
+    display:block;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px hwb(72 5% 20% / 0.102);
+}
+
+
+.search-input {
+    width: calc(100% - 80px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: #0056b3;
+}
+
+.loading {
+    text-align: center;
+    margin-top: 20px;
+    font-display: 10px;
+}
+
+.recipe-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recipe-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #fafafa;
+}
+
+.recipe-item h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+.recipe-item p {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.recipe-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.recipe-item a:hover {
+    text-decoration: underline;
+}
+
+/* For smaller screens */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .container {
+        max-width: 90%;
+    }
+    .navbar a {
+        padding: 10px;
+    }
+    
+}
+/* For smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+    .search-input {
+        width: calc(100% - 100px);
+    }
+    #search-btn {
+        margin-top: 10px;
+    }
+    
+}
+
+/* For larger screens */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1100px;
+    }
+ 
+}
+
+.loading {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.loading::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 4px solid black;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: loadingAnimation 1s linear infinite; /* Adjust duration and timing function as needed */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   
+}
+
+@keyframes loadingAnimation {
+    to {
+        transform: rotate(260deg);
+    }
+}
+
+.icon-link {
+    margin-right: 10px; 
+    color: white;
+    text-decoration: none; 
+    font-size: 1.5rem;
+}
+
+/* Add margin to the right of all icons except the last one */
+.icon-link:not(:last-child) {
+    margin-right: 20px; /* Adjust the gap between icons */
+}
+
